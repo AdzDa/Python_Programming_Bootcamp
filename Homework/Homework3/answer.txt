@@ -1,0 +1,50 @@
+ Reading Questions
+
+ 1. What is a nested loop?
+
+        Nested loop is where there is/ are another loop(s) inside a loop
+
+2. Which kind of loop is based on a conditional statement: while loops or for loops?
+
+        "which" loop is based on a conditional statement or the boolean condition; whereby, if the condition is true then the loop will start/ keep executing.
+
+3. When you want to iterate a specific number of times, would you typically use a while loop or a for loop?
+
+        It's better to use "for" loop if we already know how much we want to iterate
+
+4. Is it possible to loop through a string one letter at a time? What is the example given in the article?
+
+        Yes, it's possible. The example given from the article is as follows:
+
+            sammy = 'Sammy'
+
+            for letter in sammy:
+            print(letter)
+
+        Where, the output would be:
+
+            S
+            a
+            m
+            m
+            y
+
+
+5. Extrapolate from what you learned in the articles: Do you think a for loop be nested inside a while loop? Why or why not?
+
+        Yes, "for" loop can be inside the "while" loop; and it is still considered as nested loop. The example could be done is as follow:
+
+        Source code:
+            i=0 
+            while i<6:
+                for j in range(i):
+                    print("*",end=' ')
+                print()
+                i +=1
+        
+        Output:
+            * 
+            * * 
+            * * * 
+            * * * * 
+            * * * * * 
