@@ -20,3 +20,7 @@ for x in range(len(disney_characters)):
     else:
         print(disney_characters[x],", Ehh, a's and e's are so ordinary.")
 
+#or
+
+# for name in disney_characters:
+#     if "u" in name:

@@ -32,3 +32,9 @@ print("\t" + romantic_movie1[0] + " (" + str(romantic_movie1[1]) + "):" + " " + 
 a = " "     #Other; empty space str variable
 print("\t" + romantic_movie2[0] + a + "(" + str(romantic_movie2[1]) + "):" + a + romantic_movie2[3] + "\n")
 print("\t" + romantic_movie3[0] + " (" + str(romantic_movie3[1]) + "):" + " " + romantic_movie3[3])
+
+
+#or
+# def rom_mov(mov_tuple):
+#     print()
+
