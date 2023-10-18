@@ -1,0 +1,17 @@
+Data pulled from at least one API.
+Get creative! Tons of free APIs exist. Ask your instructor or classmates for ideas!
+Take care that they’re the best choice based on your end goal.
+Cleaning and structuring the data obtained from API - handling of data format. Save them as JSON and treat them as a dictionary. 
+Include the concept of Flask. You may return whatever you want in the Flask. Get creative
+
+Core Python topics. At minimum (the more the merrier):
+    Dictionaries, lists or sets, or tuples. (Any one or more)
+    Functions with **args or parameters or *kwargs. (Any one or more)
+    Basic debugging, such as a try/except block, A class. (Optional).
+    User input or reading from a file or if else statement or for/while loops. (Any two or more)
+
+Comments, so another developer can easily see what your code does.
+
+Note: 
+One code may incorporate more than one of the above concepts.’
+You will also have to present your code and explain it. 
