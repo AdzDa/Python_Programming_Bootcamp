@@ -1,21 +1,28 @@
-from flask import Flask, jsonify, render_template
+from flask import Flask, jsonify, render_template, request, redirect, url_for
 import requests
 
 app = Flask(__name__, template_folder="templates")
 
-recipe = requests.get("https://www.themealdb.com/api/json/v1/1/search.php?f=a&authuser=0")
-food_cal = requests.get("https://api.nal.usda.gov/fdc/v1/foods/list?api_key=MXmAamnHdoV8eL6XkXoPtkh5FTzlZO7arnzU7bc8&authuser=0")   #food_cal=Food's Calories
+recipes_collection = requests.get("https://www.themealdb.com/api/json/v1/1/search.php?f=a&authuser=0")
+food_cal_info = requests.get("https://api.nal.usda.gov/fdc/v1/foods/list?api_key=MXmAamnHdoV8eL6XkXoPtkh5FTzlZO7arnzU7bc8&authuser=0")   #food_cal_info=Food's Calories
 
-@app.route('/')
-def read_html():
-    return render_template('indexA.html')
+recipe_ingredient = {}  #Global empty(initial) dictionary for recipe or ingredients' input
 
-@app.route('/recipe')
-def find_recipe()
-    return
+@app.route('/', methods = ['POST', 'GET'])
+def main_page():
+    if request.method == 'POST':
+        lastName = request.form["lname"]
+        recipe_ingredient["lastName"] = lastName
+        return redirect(url_for('recipes'))
+    else:    
+        return render_template('index.html')
+
+@app.route('/recipes')
+def find_recipes():
+    return render_template('recipe.html', recipes=recipe_ingredient["recipe"])
 
 @app.route('/calorie')
-def calorie()
+def calorie():
     return
 
 if __name__ == '__main__':
