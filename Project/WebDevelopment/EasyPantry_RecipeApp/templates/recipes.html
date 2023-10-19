@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Pantry - Recipe Generator</title>
+
+    <link rel="stylesheet" href="../static/style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="main_container">
+        <div class="header">
+            <div class="logo">
+                <img src="../static/logo.png" alt="Logo" width="125px">
+                <h1 style="color: rgb(228, 82, 56);">Easy Pantry</h1>
+            </div>
+        </div>
+    
+        <h1>RECIPES</h1>
+        <div class="row1" style="margin-bottom: 50px;">
+            <form method="post">    <!--- action="/action_page.php"--->
+                <center>
+                <input type="text" name="" id="input_text" placeholder="Ingredients(eg.): egg, soy sauce">
+                <button type="submit" id="search_btn"><i class="fa fa-search"></i></button>
+                </center>
+            </form>
+        </div>
+    
+        <p style="text-align: center; margin-top: 20px;" class="manual">
+            <strong>Manual:</strong> You could use the search bar as above or 
+        <br>tick in related ingredients as below</p>
+    
+        <div class="container">
+            <div class="row2">
+                <div class="col2">
+                    <button class="accordion">Essentials</button>
+                    <div class="panel">
+                        <form method="post" style="font-size: 20px; margin-left: 300px" class="row2">
+                            <div class="col2">
+                                <input type="checkbox" id="panel-1-a" name="panel-1-a" value="panel1A">
+                                <label for="panel-1-a">Cooking oil</label><br>
+        
+                                <input type="checkbox" id="panel-1-b" name="panel-1-b" value="panel1B">
+                                <label for="panel-1-b">Garlic</label><br>
+        
+                                <input type="checkbox" id="panel-1-c" name="panel-1-c" value="panel1C">
+                                <label for="panel-1-c">Onion/ Holland onion</label><br>
+        
+                                <input type="checkbox" id="panel-1-d" name="panel-1-d" value="panel1D">
+                                <label for="panel-1-d">Red onion</label><br>
+                            </div>
+    
+                            <div class="col2">
+                                <input type="checkbox" id="panel-1-e" name="panel-1-e" value="panel1E">
+                                <label for="panel-1-e">Shallot</label><br>
+        
+                                <input type="checkbox" id="panel-1-f" name="panel-1-f" value="panel1F">
+                                <label for="panel-1-f">Sugar</label><br>
+        
+                                <input type="checkbox" id="panel-1-g" name="panel-1-g" value="panel1G">
+                                <label for="panel-1-g">Salt</label><br>
+                            </div>
+                        </form>
+                    </div>
+            
+                    <button class="accordion">Seasoning/ Herbs/ Condiments</button>
+                    <div class="panel">
+                        <form method="post" style="font-size: 20px; margin-left: 300px" class="row2">
+                            <div class="col2">
+                                <input type="checkbox" id="panel-2-a" name="panel-2-a" value="panel2A">
+                                <label for="panel-2-a">Curry powder</label><br>
+    
+                                <input type="checkbox" id="panel-2-b" name="panel-2-b" value="panel2B">
+                                <label for="panel-2-b">Turmeric powder</label><br>
+    
+                                <input type="checkbox" id="panel-2-c" name="panel-2-c" value="panel2C">
+                                <label for="panel-2-c">Ketchup</label><br>
+    
+                                <input type="checkbox" id="panel-2-d" name="panel-2-d" value="panel2D">
+                                <label for="panel-2-d">Soy sauce</label><br>
+    
+                                <input type="checkbox" id="panel-2-e" name="panel-2-e" value="panel2E">
+                                <label for="panel-2-e">Fish sauce</label><br>
+                            </div>
+    
+                            <div class="col2">
+                                <input type="checkbox" id="panel-2-f" name="panel-2-f" value="panel2F">
+                                <label for="panel-2-f">Mayonnaise</label><br>
+    
+                                <input type="checkbox" id="panel-2-g" name="panel-2-g" value="panel2G">
+                                <label for="panel-2-g">Sesame oil</label><br>
+    
+                                <input type="checkbox" id="panel-2-h" name="panel-2-h" value="panel2H">
+                                <label for="panel-2-h">Oyster sauce</label><br>
+    
+                                <input type="checkbox" id="panel-2-i" name="panel-2-i" value="panel2I">
+                                <label for="panel-2-i">Sambal</label><br>
+    
+                                <input type="checkbox" id="panel-2-j" name="panel-2-j" value="panel2J">
+                                <label for="panel-2-j">Prawn paste/ Belacan</label><br>
+                            </div>
+                        </form>
+                    </div>
+    
+                    <button class="accordion">Meats</button>
+                    <div class="panel">
+                        <form method="post" style="font-size: 20px; margin-left: 300px" class="row2">
+                            <div class="col2">
+                                <input type="checkbox" id="panel-3-a" name="panel-3-a" value="panel3A">
+                                <label for="panel-3-a">Lamb</label><br>
+    
+                                <input type="checkbox" id="panel-3-b" name="panel-3-b" value="panel3B">
+                                <label for="panel-3-b">Cow</label><br>
+    
+                                <input type="checkbox" id="panel-3-c" name="panel-3-c" value="panel3C">
+                                <label for="panel-3c-">Duck</label><br>
+                            </div>
+    
+                            <div class="col2">
+                                <input type="checkbox" id="panel-3-d" name="panel-3-d" value="panel3D">
+                                <label for="panel-3-d">Steak</label><br>
+    
+                                <input type="checkbox" id="panel-3-e" name="panel-3-e" value="panel3E">
+                                <label for="panel-3-e">Chicken</label><br>
+                            </div>
+                        </form>
+                    </div>
+    
+                    <button class="accordion">Carbohidrates</button>
+                    <div class="panel">
+                        <form method="post" style="font-size: 20px; margin-left: 300px" class="row2">
+                            <div class="col2">
+                                <input type="checkbox" id="panel-4-a" name="panel-4-a" value="panel4A">
+                                <label for="panel-4-a">Rice</label><br>
+    
+                                <input type="checkbox" id="panel-4-b" name="panel-4-b" value="panel4B">
+                                <label for="panel-4-b">Bread</label><br>
+                            </div>
+    
+                            <div class="col2">
+                                <input type="checkbox" id="panel-4-c" name="panel-4-c" value="panel4C">
+                                <label for="panel-4-c">Pasta</label><br>
+    
+                                <input type="checkbox" id="panel-4-d" name="panel-4-d" value="panel4D">
+                                <label for="panel-4-d">Flour</label><br>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            
+                <div class="col2" style="margin-left:30px;">
+                    <button class="accordion">Vegetables</button>
+                    <div class="panel">
+                        <form method="post" style="font-size: 20px; margin-left: 300px" class="row2">
+                            <div class="col2">
+                                <input type="checkbox" id="panel-5-a" name="panel-5-a" value="panel5A">
+                                <label for="panel-5-a">Long beans</label><br>
+    
+                                <input type="checkbox" id="panel-5-b" name="panel-5-b" value="panel5B">
+                                <label for="panel-5-b">Cabbage</label><br>
+    
+                                <input type="checkbox" id="panel-5-c" name="panel-5-c" value="panel5C">
+                                <label for="panel-5-c">Cauliflower</label><br>
+    
+                                <input type="checkbox" id="panel-5-d" name="panel-5-d" value="panel5D">
+                                <label for="panel-5-d">Spring onion</label><br>
+    
+                                <input type="checkbox" id="panel-5-e" name="panel-5-e" value="panel5E">
+                                <label for="panel-5-e">Leek/ Kucai</label><br>
+    
+                                <input type="checkbox" id="panel-5-f" name="panel-5-f" value="panel5F">
+                                <label for="panel-5-f">Ocra/ Bendi</label><br>
+    
+                                <input type="checkbox" id="panel-5-g" name="panel-5-g" value="panel5G">
+                                <label for="panel-5-g">Eggplant</label><br>
+                            </div>
+    
+                            <div class="col2">
+                                <input type="checkbox" id="panel-5-h" name="panel-5-h" value="panel5H">
+                                <label for="panel-5-h">Celery</label><br>
+    
+                                <input type="checkbox" id="panel-5-i" name="panel-5-i" value="panel5I">
+                                <label for="panel-5-i">Chilli</label><br>
+    
+                                <input type="checkbox" id="panel-5-j" name="panel-5-j" value="panel5J">
+                                <label for="panel-5-j">Broccoli</label><br>
+    
+                                <input type="checkbox" id="panel-5-k" name="panel-5-k" value="panel5K">
+                                <label for="panel-5-k">Tomatoes</label><br>
+    
+                                <input type="checkbox" id="panel-5-l" name="panel-5-l" value="panel5L">
+                                <label for="panel-5-l">Raddish</label><br>
+    
+                                <input type="checkbox" id="panel-5-m" name="panel-5-m" value="panel5M">
+                                <label for="panel-5-m">Carrot</label><br>
+    
+                                <input type="checkbox" id="panel-5-n" name="panel-5-n" value="panel5N">
+                                <label for="panel-5-n">Potatoes</label><br>
+                            </div>
+                        </form>
+                    </div>
+            
+                    <button class="accordion">Fruits</button>
+                    <div class="panel">
+                        <form method="post" style="font-size: 20px; margin-left: 300px" class="row2">
+                            <div class="col2">
+                                <input type="checkbox" id="panel-6-a" name="panel-6-a" value="panel6A">
+                                <label for="panel-6-a">Mango</label><br>
+    
+                                <input type="checkbox" id="panel-6-b" name="panel-6-b" value="panel6B">
+                                <label for="panel-6-b">Lime</label><br>
+    
+                                <input type="checkbox" id="panel-6-c" name="panel-6-c" value="panel6C">
+                                <label for="panel-6-c">Lemon</label><br>
+    
+                                <input type="checkbox" id="panel-6-d" name="panel-6-d" value="panel6D">
+                                <label for="panel-6-d">Orange</label><br>
+    
+                                <input type="checkbox" id="panel-6-e" name="panel-6-e" value="panel6E">
+                                <label for="panel-6-e">Apple</label><br>
+                            </div>
+    
+                            <div class="col2">
+                                <input type="checkbox" id="panel-6-f" name="panel-6-f" value="panel6F">
+                                <label for="panel-6-f">Papaya</label><br>
+    
+                                <input type="checkbox" id="panel-6-g" name="panel-6-g" value="panel6G">
+                                <label for="panel-6-g">Banana</label><br>
+    
+                                <input type="checkbox" id="panel-6-h" name="panel-6-h" value="panel6H">
+                                <label for="panel-6-h">Pineapple</label><br>
+    
+                                <input type="checkbox" id="panel-6-i" name="panel-6-i" value="panel6I">
+                                <label for="panel-6-i">Jackfruit</label><br>
+                            </div>
+                        </form>
+                    </div>
+    
+                    <button class="accordion">Seafood</button>
+                    <div class="panel">
+                        <form method="post" style="font-size: 20px; margin-left: 300px" class="row2">
+                            <div class="col2">
+                                <input type="checkbox" id="panel-7-a" name="panel-7-a" value="panel7A">
+                                <label for="panel-7-a">Prawn</label><br>
+    
+                                <input type="checkbox" id="panel-7-b" name="panel-7-b" value="panel7B">
+                                <label for="panel-7-b">Fish</label><br>
+    
+                                <input type="checkbox" id="panel-7-c" name="panel-7-c" value="panel7C">
+                                <label for="panel-7-c">Salmon</label><br>
+                            </div>
+    
+                            <div class="col2">
+                                <input type="checkbox" id="panel-7-d" name="panel-7-d" value="panel7D">
+                                <label for="panel-7-d">Squid</label><br>
+    
+                                <input type="checkbox" id="panel-7-e" name="panel-7-e" value="panel7E">
+                                <label for="panel-7-e">Eel</label><br>
+                            </div>
+                        </form>
+                    </div>
+    
+                    <button class="accordion">Cooking Utensils</button>
+                    <div class="panel">
+                        <form method="post" style="font-size: 20px; margin-left: 300px" class="row2">
+                            <div class="col2">
+                                <input type="checkbox" id="panel-8-a" name="panel-8-a" value="panel8A">
+                                <label for="panel-8-a">Oven/ Microwave</label><br>
+    
+                                <input type="checkbox" id="panel-8-b" name="panel-8-b" value="panel8B">
+                                <label for="panel-8-b">Pressure cooker</label><br>
+                            </div>
+    
+                            <div class="col2">
+                                <input type="checkbox" id="panel-8-c" name="panel-8-c" value="panel8C">
+                                <label for="panel-8-c">Stir fry pan</label><br>
+    
+                                <input type="checkbox" id="panel-8-d" name="panel-8-d" value="panel8D">
+                                <label for="panel-8-d">Boiling pot</label><br>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <center>
+                    <form action="" method="post">
+                        <input type="submit" value="Search" id="search_btn2">
+                    </form>
+                </center>
+            </div>
+    
+            <script>
+                var acc = document.getElementsByClassName("accordion");
+                var i;
+                
+                for (i = 0; i < acc.length; i++) {
+                  acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                      panel.style.display = "none";
+                    } else {
+                      panel.style.display = "block";
+                    }
+                  });
+                }
+            </script>
+        </div>
+    </div>
+
+    <footer>
+        <div class="rowA">
+            <div class="info">
+                <p>A personal project by Adzrul Danin</p>
+                <p>For educational purposes only</p>
+                <p>Exelerate Asia Python Programming Bootcamp</p>
+            </div>
+            <div class="AttachmentLogos">
+                <img src="../static/ExelerateAsia_logo.png" alt="ExelerateAsia">
+                <img src="../static/GA Academy_logo.png" alt="GA Academy" style="margin-left: 10px;">
+                <img src="../static/GitHub_logo.png" alt="Github Profile" style="margin-left: 10px;">
+                <img src="../static/LinkedIn_logo.png" alt="Linkedin profile" style="margin-left: 10px;">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

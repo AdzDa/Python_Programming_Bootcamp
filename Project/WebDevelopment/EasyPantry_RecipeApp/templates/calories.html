@@ -9,20 +9,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <div class="header">
-        <div class="logo">
-            <img src="../static/logo.png" alt="Logo" width="125px">
-            <h1 style="color: rgb(228, 82, 56);">Easy Pantry</h1>
+    <div class="main_container">
+        <div class="header">
+            <div class="logo">
+                <img src="../static/logo.png" alt="Logo" width="125px">
+                <h1 style="color: rgb(228, 82, 56);">Easy Pantry</h1>
+            </div>
+        </div>
+    
+        <h1>CALORIES</h1>
+        <div class="row1" style="margin-bottom: 50px;">
+            <form method="post">    <!--- action="/action_page.php"--->
+                <center>
+                <input type="text" name="" id="input_text" placeholder="Recipe(eg.): apam balik, fried rice">
+                <button type="submit" id="search_btn"><i class="fa fa-search"></i></button>
+                </center>
+            </form>
         </div>
     </div>
-
-    <h1>RECIPES</h1>
-    <form method="post">
-        <input type="text" name="" id="input_text" placeholder="Ingredients: eg. egg, soy sauce">
-    </form>
 
     <footer>
         <div class="rowA">
