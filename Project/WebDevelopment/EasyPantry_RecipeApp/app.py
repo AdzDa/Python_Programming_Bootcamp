@@ -3,14 +3,20 @@ import requests
 
 app = Flask(__name__, template_folder="templates")
 
+# Call the API by opening the URL and reading the data.
 recipes_collection = requests.get("https://www.themealdb.com/api/json/v1/1/search.php?f=a&authuser=0")
 food_cal_info = requests.get("https://api.nal.usda.gov/fdc/v1/foods/list?api_key=MXmAamnHdoV8eL6XkXoPtkh5FTzlZO7arnzU7bc8&authuser=0")   #food_cal_info=Food's Calories
+
+# Decode the raw JSON data.
+# Convert JSON as a dictionary format
+response_recipes = recipes_collection.json()
+response_calories = food_cal_info.json()
 
 recipe_ingredient = {}  #Global empty(initial) dictionary for recipe or ingredients' input
 
 @app.route('/', methods = ['POST', 'GET'])
 def main_page():
-    if request.method == 'POST':
+    if  request.method == 'POST':
         lastName = request.form["lname"]
         recipe_ingredient["lastName"] = lastName
         return redirect(url_for('recipes'))

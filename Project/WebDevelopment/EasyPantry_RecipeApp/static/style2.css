@@ -70,7 +70,7 @@ footer{
 }
 
 h1{
-    margin-top: 100px;
+    margin-top: 120px;
     margin-bottom: 15px;
     text-align: center;
     color: azure;
@@ -81,6 +81,7 @@ h1{
     padding: 15px;
     border-radius: 7px;
     width: 50%;
+    margin-bottom: 200px;
 }
 
     ::-webkit-input-placeholder {
@@ -95,11 +96,11 @@ h1{
     padding: 15px;
     border-radius: 7px;
     margin:auto;
-    max-width:350px"
+    max-width:350px;
 }
 
 .main_container{
-    background-image: url("../static/Background_recipe_pg.png");
+    background-image: url("../static/MainBackground_calorie.jpg");
     background-size: cover;
 }
 
