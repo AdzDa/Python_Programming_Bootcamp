@@ -3,15 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boojang</title>
+    <title>Easy Pantry - Recipe Generator</title>
 
-    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <link rel="stylesheet" href="../static/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <form method="post"></form>
+    <!-- <form method="post"></form> -->
+    <div class="header">
+        <div class="container">
+            <div class="NavBar">
+                <div class="logo">
+                    <img src="../static/logo.png" alt="Logo" width="125px">
+                    <h1 style="color: rgb(228, 82, 56);">Easy Pantry</h1>
+                </div>
+        
+                <nav>
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">RECIPES</a></li>
+                        <li><a href="">HEALTH</a></li>
+                        <li><a href="">ACCOUNT</a></li>
+                    </ul>
+                </nav>
+                <img src="../static/hamburger_icon.png" alt="Cart Icon" width="30px" height="30px">
+            </div>
+    
+            <div class="row">
+            <!-- col2= 2 column -->
+                <div class="col2" style="text-align: center;">
+                    <h1>Don't have any idea on what to COOK ?<br> or 
+                    <br>Planning on a DIET ?</h1>
+                    <p style="margin-top: 10px;">
+                        Just type-in the only ingredients you have and we'll generate the recipes for you 
+                        <br> Start your CHEAP and HEALTHY life with us!
+                    </p>
+                    <a href="" class="btn">Learn More &nbsp;&nbsp; &#10148;</a>
+                </div>
+    
+                <div class="col2">
+                    <img src="../static/MainBackground_food.jpg" alt="Background picture of a dish well presented" width="150%">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="rowA">
+            <div class="info">
+                <p>A personal project by Adzrul Danin</p>
+                <p>For educational purposes only</p>
+                <p>Exelerate Asia Python Programming Bootcamp</p>
+            </div>
+            <div class="AttachmentLogos">
+                <img src="../static/ExelerateAsia_logo.png" alt="ExelerateAsia">
+                <img src="../static/GA Academy_logo.png" alt="GA Academy" style="margin-left: 10px;">
+                <img src="../static/GitHub_logo.png" alt="Github Profile" style="margin-left: 10px;">
+                <img src="../static/LinkedIn_logo.png" alt="Linkedin profile" style="margin-left: 10px;">
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
