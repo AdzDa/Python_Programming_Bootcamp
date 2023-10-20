@@ -106,7 +106,7 @@ def recipe_gen():   #ok
 
 
 
-@app.route('/health/food_registered')    
+@app.route('/health/food_registered')    #ok
 #check the list of regitered foods only (Nutritional info)
 def registered_food_nutrient():
     food = []    #Assigning food variable as an empty list (initial) 
@@ -115,13 +115,15 @@ def registered_food_nutrient():
     return jsonify(food)
 
 
-@app.route('/health/food_kcal/<what_food>')    
+@app.route('/health/food_kcal/<what_food>')    #half ok
 #create dynamic url; what_food input is based on food_registered
+#orint out the foodnutrient involved
+#not all response_calories[i]["foodNutrients"][3] is for the energy(kcal/kj)
 def kcal(what_food):    #call/ get argument from the url
     for i in range(len(response_calories)):
-        if what_food == response_calories[i]["description"]
-            a = response_calories[i][""]
-            return f"The Energy in {what_food} is {a} kcal"
+        if what_food == response_calories[i]["description"]:
+            a = response_calories[i]["foodNutrients"][3]
+            return f"The Energy in {what_food} has: {a}"
 
 
 
